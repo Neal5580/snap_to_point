@@ -1,0 +1,54 @@
+.container {
+    scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(100%);
+    scroll-behaviour: smooth;
+    overflow: scroll;
+    height: 100vh;
+    margin-top: 10px;
+}
+
+html,
+body,
+section {
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: sans-serif;
+    background: #333;
+}
+
+body {
+    padding-top: 5px;
+}
+
+a {
+    color: #fff;
+}
+
+h1,
+h2,
+h3 {
+    margin: 2em auto;
+    text-align: center;
+}
+
+section {
+    min-height: 100%;
+    width: 100%;
+    background: lightsalmon;
+    overflow: hidden;
+    position: relative;
+}
+
+section:nth-child(odd) {
+    background: lightseagreen;
+}
+
+/*section:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        height: 50%;
+        width: 100%;
+        background: linear-gradient(-180deg, rgba(0,0,0,0.20) 0%, rgba(0,0,0,0.40) 100%);
+    }*/
